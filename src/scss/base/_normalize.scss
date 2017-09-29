@@ -1,0 +1,27 @@
+/* File: _normalize.scss. Provides the base theme. */
+
+@import url('https://fonts.googleapis.com/css?family=Cutive|Potano+Sans');
+
+html {
+  font-size: $main-font-size;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, footer, aside, section, article, figure,
+table, tr, td {
+  display: block;
+}
+
+body {
+  background: $mint;
+  color: $brown;
+}
+
+a { text-decoration: none; }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8"/>
+	<meta name="description" content="Personal portfolio, biography, and contact information website for Johnny.">
+
+	<title> Johnny's Website </title>
+
+	<link rel = "stylesheet" href = "css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div id="page">
+
+<nav class="navbar">
+	<ul class="nav">
+    <li><a href="#up" onclick="scrollToY(-1, 150, 'easeInOutQuint');"><h3 id="my-name">Johnny Sellers</h3></a></li>
+		<li><a href="#a-work" class="slide-section" id="experience-button">Experience</a></li>
+		<li><a href="#portfolio" class="slide-section" id="portfolio-button">Portfolio</a></li>
+		<li><a href="#bio" class="slide-section" id="bio-button">Bio</a></li>
+		<li><a href="#connect" class="slide-section" id="connect-button">Connect</a></li>
+	</ul>
+
+	<div class="dropdown">
+	  <button class="dropbtn">Menu glyphicon</button>
+	  <div class="dropdown-content">
+			<a href="#" onclick="return false;" onmousedown="autoScrollTo('a-work');">Experience</a>
+	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('portfolio');">Portfolio</a>
+	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('bio');">Bio</a>
+			<a href="#" onclick="return false;" onmousedown="autoScrollTo('connect');">Connnect</a>
+	  </div>
+	</div>
+</nav>
+
+<div class="carousel-slide intro-slide">
+	<a class="section-anchor" id="intro"></a>
+
+	<div>
+		<a class="headline" href="#" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>I'm currently a masters student in applied mathematics at the University of Washington. Anything HPC, distributed and parallel computing, software engineering, data science--I'm ready to dive in head first. Welcome to my site.</div></a>
+	</div>
+
+	<!-- TODO set this image to change when breakpoint-small (by css or else?)-->
+	<div id="intro-img">
+		<img id="intro-img" src="./img/IMG_05582.jpg" alt="big waves pic"/>
+	</div>
+</div>	<!-- End of #intro div -->
+
+
+<div class="carousel-slide experience-slide">
+	<a class="section-anchor" id="a-work"></a>
+
+	<h2 class="title" id="career">CAREER HIGHLIGHTS</h2>
+	<!-- <p id="p-work"><i>"Work as if you were to live a hundred years." --Benjamin Franklin</i></p> -->
+
+	<div class="career-block">
+		<section>
+			<h3><a href="http://amath.Washington.edu/">University of Washington,</a></h3>
+			<h5 name="address RTP">Seattle, WA</h5>
+			<h4>M.Sc. in Applied Math</h4>
+				<ul>
+					A large part of my focus in this program is centered around high-performance computing, exa-scale computing, working with large data sets produced in the areas of numerical linear algebra, fluid mechanics, optimization, and the classical computer science topic of graph algorithms. I will be doing independent study in the latter topic and its mergence parallel computing.
+				</ul>
+		</section>
+		<div class="img-container" id="lewis">
+			<a class="company-img" href="https://amath.washington.edu/">
+				<img src="./img/uwseattle1.jpg" alt="applied math logo"/></a>
+		</div>
+	</div>
+
+	<div class="career-block">
+		<section>
+			<h3><a href="http://www.monsanto.com/pages/default.aspx">MONSANTO CO.,</a></h3>
+			<h5 name="address RTP">RTP, NC</h5>
+			<h4>Engineering Technician</h4>
+				<ul>
+					Here, I worked in an automated greenhouse with teams spanning disciplines from plant microbiology, to mechanical engineering to a wide range of software developer specialties and statistics. My job was to operate the greenhouse and provide first hand operational experience to the teams for continuous improvement and establishing new capabilities.
+				</ul>
+				<br>
+				<ul>
+					One of my proudest accomplishments: I improved the downtime recording procedures and software which led to improved diagnoses and ultimately reductions in downtime for various processes up to 30%.
+				</ul>
+		</section>
+		<div class="img-container">
+			<a class="company-img" href="http://www.monsanto.com/pages/default.aspx">
+				<img src="./img/monsantologo1.png" alt="monsanto logo"/></a>
+		</div>
+	</div>
+
+	<div class="career-block">
+		<section class="block-2">
+			<h3><a href="http://www.shipmantech.com/">Shipman Technologies Inc.,</a></h3>
+			<h5 name="address RTP">RTP, NC</h5>
+			<h4>Associate Mechanical Engineer</h4>
+			<ul>
+				This was my first job after graduation from N.C. State. I gained invaluable manufacturing experience in software, machining, tooling, process control and more working on the production lines of 3 medical devices--a job where quality in production translates directly to the well-being of the customer.
+			</ul>
+			<br>
+			<ul>
+				A second big responsibility in this role was on a project taking our customer's design for an electric-powered bycyle and manufacturing a main component (namely, a fork-hub-brake assembly). The changes for manufacturability--i.e., dimension alterations, materials selection, etc.--provided my first experience in learing how to deal with customers while providing great customer experiences and quality services.
+			</ul>
+		</section>
+		<div class="img-container">
+			<a class="company-img" href="http://www.shipmantech.com/">
+				<img src="./img/shipmanlogo1.png" alt="shipman logo"/></a>
+		</div>
+	</div>
+
+	<div class="career-block">
+		<section class="block-3">
+			<h3><a href="https://www.mae.ncsu.edu/">North Carolina State University,</a></h3>
+			<h5 name="address Raleigh">Raleigh, NC</h5>
+			<h4>B.Sc. in Mechanical Engineering</h4>
+			<ul>
+				Curriculum consisted of mainly thermodynamics, heat transfer, solid and fluid mechanics (statics, dynamics, vibrations), principles of control, nondestructive testing, and mechanical engineering design.
+			</ul>
+			<ul>
+				I completed two capstone courses. One where we designed the coolant system for an energy plant--pump sizes, pipe dimensions, heat exchangers, valves, and so on. In the final senior design course, we devised a way to extract the internal components of a large-scale water filtration system out of their housing by means of electromechanical devices.
+			</ul>
+		</section>
+		<div class="img-container">
+			<a class="company-img" href="https://www.mae.ncsu.edu/">
+				<img id="ncsupic" src="./img/NCSUbelltower.JPG" alt="ncsu bell tower"/></a>
+		</div>
+	</div>
+
+	<div class="career-block">
+		<section class="block-4">
+			<h3><a href="https://www.mae.ncsu.edu/jiang/">Micro/Nano Engineering Lab, Department of Mechanical and Aerospace Engineering,</a></h3>
+			<h5 name="address Raleigh">Raleigh, NC</h5>
+			<h4>Undergraduate Research Assistant</h4>
+			<ul>
+				This role provided me with great experience in conducting research in the area of nano-scale, nondestructive evaluation in the biomedical/mechanical engineering arena. Our task was to investigate means for safely extracting live HeLa cells from a growth substrate that could be reproduced at scale--our focus was on electromagnetic actuators. I was not the principal investigator.
+			</ul>
+		</section>
+		<div class="img-container">
+			<a class="company-img" href="https://www.mae.ncsu.edu/jiang/">
+				<img id="nanopic" src="./img/nano1.jpg" alt="micro nano lab logo"/></a>
+		</div>
+	</div>
+</div>	<!-- End of #experience-slide div -->
+
+<a href="#" id="portfolio"></a>
+<div class="carousel-slide portfolio-slide">
+
+	<h2 class="title">ONGOING PROJECTS</h2>
+	<p id="p-work"><i>"Work as if you were to live a hundred years." --Benjamin Franklin</i></p>
+
+	<div class="portfolio">
+		<div class="project-block project-block-1">
+			<a class="portfolio-pic" href="https://github.com/JohnSell620"><img src="./img/jmessagelogo1.png" alt="messenger mobile app" /></a>
+			<p class="portfolio-description">A fun, interactive, easy-to-use, android messenger app.</p>
+		</div>
+
+		<div class="project-block project-block-2">
+			<a class="portfolio-pic" href="https://github.com/JohnSell620/NumInt"><img src="./img/numint1.png" alt="timesheet/tips web app" /></a>
+			<p class="portfolio-description">NumInt - a handy tool with a sleek UI (developed with QT) made for computing any double integral up to 15 significant digits. Possibly a mobile version coming.</p>
+		</div>
+
+		<div class="project-block project-block-3">
+			<a class="portfolio-pic" href="https://github.com/JohnSell620"><img src="./img/scrapy.png" alt="Scrapy web crawl" /></a>
+			<p class="portfolio-description">Web crawling with Scrapy API to collect data for correlation analyses, etc.</p>
+		</div>
+	</div>
+</div>
+
+<a class="section-anchor" id="bio"></a>
+<div class="carousel-slide bio-slide">
+
+	<h2 class="title">ABOUT ME</h2>
+	<div class="list-item" id="bio">
+		<h4>As of August 21, 2017, I am officially an eclipse chaser. We went to Cades Cove in Townsend, Tennessee. The eclipse was probably the mose amazing thing I've ever seen.</h4><br>
+    <figure>
+      <img id="eclipse" src="img/solareclipse.jpg" >
+      <figcaption>Courtesy of NASA.gov</figcaption>
+    </figure>
+	</div>
+
+</div>	<!-- End of bio slide -->
+
+<div class="carousel-slide outro-slide">
+	<a class="section-anchor" id="outro"></a>
+
+	<div id="outro">
+		<p class="outro">Let's get in touch!</p>
+		<br>
+		<p class="text">I've done work in high-performance computing, web scraping, web development, data analysis with excel and python. I'm gradually moving into data cleaning and munging, feature engineering, and a little machine learning (through Kaggle competitions). Ask me anything!</p><br>
+	</div>
+</div>	<!-- End of outro slide -->
+
+<!-- <hr> -->
+<div id="popup_container">
+  <div id="form_container">
+    <form id="email_form" action="#" method="POST" enctype="multipart/form-data">
+      <img id="close" src="img/close_window1600.png" onclick="hideEmailForm()">
+    	<div class="row">
+    		<label for="name">Your name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="email">Your email:</label><br />
+    		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="message">Your message:</label><br />
+    		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    	</div>
+      <div class="send">
+        <a href="javascript:%20validateSubmission()" id="submit">Send</a>
+      </div>
+    	<!-- <input id="submit_button" type="submit" value="Send email" onclick="emailFormDisplay(0);"/> -->
+    </form>
+  </div>
+</div>
+
+<footer id="connect">
+	<div class="footer"><a href="https://www.linkedin.com/in/johnny-sellers-b26819128"><img src="./img/linkedin.png" alt="LinkedIn logo"></a></div>
+	<div class="footer"><a href="https://github.com/JohnSell620"><img src="./img/GitHub-Mark.png" alt="Github logo"></a></div>
+	<div class="footer"><a href="#email" onclick="displayEmailForm();"><img src="./img/email-logo-hi.png" alt="Email symbol"></a></div>
+  <div id="copyright">Copyright &copy; 2017 &bull; Johnny Sellers</div>
+</footer>
+
+
+</div>	<!-- End of #page element -->
+
+<script type="text/javascript" src="js/all.min.js"></script>
+</body>
+</html>
