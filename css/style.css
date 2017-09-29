@@ -162,6 +162,7 @@ div.experience-slide div.career-block {
     width: 21em; }
 
 div.portfolio-slide {
+  background-image: "../img/portback.jpg";
   margin: 2.5em 0 0 0; }
   div.portfolio-slide div.portfolio {
     text-align: center;
