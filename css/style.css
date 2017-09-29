@@ -144,7 +144,7 @@ div.experience-slide h2 {
 
 div.experience-slide div.career-block {
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
   margin: 2em 0 3em; }
   div.experience-slide div.career-block section {
     width: 25em;
@@ -161,24 +161,29 @@ div.experience-slide div.career-block {
     margin-left: 5em;
     width: 21em; }
 
-div.portfolio-slide {
-  background-image: "../img/portback.jpg";
-  margin: 2.5em 0 0 0; }
-  div.portfolio-slide div.portfolio {
+div.carousel-slide.portfolio-slide {
+  margin: 2.5em 0 0;
+  background: url("../../../img/whtblok.jpg");
+  background-position: 0 0;
+  background-size: 100% 110%;
+  background-repeat: round; }
+  div.carousel-slide.portfolio-slide div.portfolio {
     text-align: center;
     overflow: auto;
     margin: 1em 0; }
-    div.portfolio-slide div.portfolio div.project-block {
+    div.carousel-slide.portfolio-slide div.portfolio div.project-block {
       vertical-align: middle;
       width: 20em;
       display: inline-block;
       margin: 3em 3em 4em; }
-      div.portfolio-slide div.portfolio div.project-block a img {
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img {
         width: 17em;
         margin-bottom: 2em; }
 
 div.bio-slide {
-  margin: 1.5em auto 0 auto; }
+  margin: 1.5em auto 0 auto;
+  background: url("../../../img/circwht.jpg");
+  background-position: 0 0; }
   div.bio-slide div#bio {
     text-align: center;
     padding: 1em 0;
