@@ -21,6 +21,7 @@
 		<li><a href="#portfolio" class="slide-section" id="portfolio-button">Portfolio</a></li>
 		<li><a href="#bio" class="slide-section" id="bio-button">Bio</a></li>
 		<li><a href="#connect" class="slide-section" id="connect-button">Connect</a></li>
+    <li><a href="#resume" class="resume" id="resume_button" >Resume</a></li>
 	</ul>
 
 	<div class="dropdown">
@@ -30,15 +31,23 @@
 	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('portfolio');">Portfolio</a>
 	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('bio');">Bio</a>
 			<a href="#" onclick="return false;" onmousedown="autoScrollTo('connect');">Connnect</a>
+      <a href="#" onclick="return false;" onmousedown="autoScrollTo('connect');">Resume</a>
 	  </div>
 	</div>
 </nav>
+
+<div id="resume_container">
+  <div class="iframe_container">
+    <iframe class="iframe1" src="../img/resume.pdf" frameborder="0" ></iframe>
+    <img id="resume_close" src="img/close_window1600.png" onclick="hideResume();">
+  </div>
+</div>
 
 <div class="carousel-slide intro-slide">
 	<a class="section-anchor" id="intro"></a>
 
 	<div>
-		<a class="headline" href="#" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>I'm currently a masters student in applied mathematics at the University of Washington. High-performance computing, software engineering, and now machine learning are my main interests. Welcome to my site.</div></a>
+		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>Welcome to my site. I'm a junior developer, and I've done projects in full-stack web development, parallel, cluster, and cloud computing, scientific software, some web scraping and data visualization.</div></a>
 	</div>
 
 	<!-- TODO set this image to change when breakpoint-small (by css or else?)-->
@@ -150,12 +159,12 @@
 	<div class="portfolio">
 		<div class="project-block project-block-1">
 			<a class="portfolio-pic" href="https://github.com/JohnSell620"><img src="./img/jmessagelogo1.png" alt="messenger mobile app" /></a>
-			<p class="portfolio-description">A fun, interactive, easy-to-use, android messenger app.</p>
+			<p class="portfolio-description">A fun, interactive, easy-to-use, messenger web app built on a RESTful framework.</p>
 		</div>
 
 		<div class="project-block project-block-2">
 			<a class="portfolio-pic" href="https://github.com/JohnSell620/NumInt"><img src="./img/numint1.png" alt="timesheet/tips web app" /></a>
-			<p class="portfolio-description">NumInt - a handy tool with a sleek UI (developed with QT) made for computing any double integral up to 15 significant digits. Possibly a mobile version coming.</p>
+			<p class="portfolio-description">NumInt - a handy triple integral evaluaor with a sleek UI developed with QT.</p>
 		</div>
 
 		<div class="project-block project-block-3">
@@ -170,7 +179,7 @@
 
 	<h2 class="title">ABOUT ME</h2>
 	<div class="list-item" id="bio">
-		<h4>As of August 21, 2017, I am officially an eclipse chaser. We went to Cades Cove in Townsend, Tennessee. The eclipse was probably the mose amazing thing I've ever seen.</h4><br>
+		<h4>As of August 21, 2017, I am officially an eclipse chaser. I went to Cades Cove in Townsend, Tennessee. The eclipse was probably the mose amazing thing I've ever seen.</h4><br>
     <figure>
       <img id="eclipse" src="img/solareclipse.jpg" >
       <figcaption>Courtesy of NASA.gov</figcaption>
@@ -185,7 +194,7 @@
 	<div id="outro">
 		<p class="outro">Let's get in touch!</p>
 		<br>
-		<p class="text">I've done work in high-performance computing, web scraping, web development, data analysis with excel and python. I'm gradually moving into data cleaning and munging, feature engineering, and a little machine learning (through Kaggle competitions). Ask me anything!</p><br>
+		<p class="text">I'm currently a masters student in applied mathematics at the University of Washington, and I'm looking to join a team of engineers that share the same passion for web development, new technologies and optimum software. I also love anything HPC related--distributed, GPU and cloud computing, large data sets, algorithm design and analysis, etc., so I'm interested in any roles with a component based in these types of areas.</p><br>
 	</div>
 </div>	<!-- End of outro slide -->
 
@@ -193,17 +202,17 @@
 <div id="popup_container">
   <div id="form_container">
     <form id="email_form" action="#" method="POST" enctype="multipart/form-data">
-      <img id="close" src="img/close_window1600.png" onclick="hideEmailForm()">
+      <img id="close" src="img/close_window1600.png" onclick="hideEmailForm();">
     	<div class="row">
-    		<label for="name">Your name:</label><br />
-    		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    	</div>
-    	<div class="row">
-    		<label for="email">Your email:</label><br />
+    		<label for="email">Your email address:</label><br />
     		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
     	</div>
     	<div class="row">
-    		<label for="message">Your message:</label><br />
+    		<label for="name">Name:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    	</div>
+    	<div class="row">
+    		<label for="message">Message:</label><br />
     		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
     	</div>
       <div class="send">
@@ -217,7 +226,7 @@
 <footer id="connect">
 	<div class="footer"><a href="https://www.linkedin.com/in/johnny-sellers-b26819128"><img src="./img/linkedin.png" alt="LinkedIn logo"></a></div>
 	<div class="footer"><a href="https://github.com/JohnSell620"><img src="./img/GitHub-Mark.png" alt="Github logo"></a></div>
-	<div class="footer"><a href="#email" onclick="displayEmailForm();"><img src="./img/email-logo-hi.png" alt="Email symbol"></a></div>
+	<div class="footer email_button"><a href="#email"><img src="./img/email-logo-hi.png" alt="Email symbol"></a></div>
   <div id="copyright">Copyright &copy; 2017 &bull; Johnny Sellers</div>
 </footer>
 
