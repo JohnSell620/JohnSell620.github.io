@@ -204,6 +204,9 @@ div.carousel-slide.portfolio-slide {
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img {
         width: 17em;
         margin-bottom: 2em; }
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#python {
+        width: 11em;
+        margin-bottom: 2em; }
 
 div.bio-slide {
   margin: 1.5em auto 0 auto;
@@ -342,7 +345,7 @@ div.carousel-slide h5[name^=address] {
   text-shadow: 2px 2px 3px #FCF1C6; }
 
 div.carousel-slide ul li {
-  font-size: 1.4em; }
+  font-size: 1.5em; }
 
 div.carousel-slide div.img-container a img {
   border-radius: 8%; }
