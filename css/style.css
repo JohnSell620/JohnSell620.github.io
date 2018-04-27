@@ -105,9 +105,48 @@ nav.navbar {
     display: block; }
     nav.navbar ul.nav li {
       display: inline-block;
-      margin: .4em 3em; }
+      margin: .5% 3%; }
   nav.navbar div.dropdown {
     display: none; }
+
+a#name {
+  display: none; }
+
+@media (max-width: 1060px) {
+  nav.navbar ul.nav {
+    display: none; }
+  nav.navbar div.dropdown {
+    position: fixed;
+    top: 1%;
+    right: 25px;
+    display: inline-block; }
+    nav.navbar div.dropdown div.menu-button div {
+      width: 35px;
+      height: 4px;
+      background-color: #0A1612;
+      margin: 5px 0;
+      transition: box-shadow .2s; }
+    nav.navbar div.dropdown div.dropdown-content {
+      display: none;
+      position: absolute;
+      right: -25px;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 6px 6px;
+      z-index: 1; }
+      nav.navbar div.dropdown div.dropdown-content a {
+        display: block; }
+  nav.navbar div.dropdown:hover div.dropdown-content {
+    display: block; }
+  nav.navbar div.dropdown:hover div.menu-button div {
+    box-shadow: 1.5px 1.5px 2px #1E90FF; }
+  a#name {
+    display: inline-block;
+    position: fixed;
+    top: 2.5%;
+    left: 8%;
+    z-index: 999; } }
 
 div#resume_container {
   width: 100%;
@@ -146,7 +185,6 @@ div.carousel-slide {
     text-align: center; }
 
 div.intro-slide a.headline {
-  font-size: 26px;
   position: absolute;
   top: 100px;
   left: 60px;
@@ -164,6 +202,22 @@ div.intro-slide div#intro-img {
     margin-left: 0;
     margin-right: 0; }
 
+div#mobile-headliner {
+  display: none; }
+
+@media (max-width: 760px) {
+  nav.navbar {
+    height: 10%; }
+  div.headliner {
+    display: none; }
+  div#mobile-headliner {
+    display: block; }
+    div#mobile-headliner a.headline {
+      position: relative; }
+    div#mobile-headliner div {
+      width: 65%;
+      margin: auto; } }
+
 div.experience-slide h2 {
   padding-top: 1em; }
 
@@ -177,13 +231,10 @@ div.experience-slide div.career-block {
     text-align: left; }
     div.experience-slide div.career-block section h3, div.experience-slide div.career-block section h4, div.experience-slide div.career-block section h5 {
       padding: .2em 0; }
-    div.experience-slide div.career-block section ul li {
-      padding: .2em 0;
-      margin-left: 1em; }
   div.experience-slide div.career-block div.img-container {
     overflow: auto;
     display: inline-block;
-    margin-left: 5em;
+    margin-left: 10%;
     width: 21em; }
 
 div.carousel-slide.portfolio-slide {
@@ -202,10 +253,10 @@ div.carousel-slide.portfolio-slide {
       display: inline-block;
       margin: 3em 3em 4em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img {
-        width: 17em;
+        width: 15em;
         margin-bottom: 2em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#python {
-        width: 11em;
+        width: 9em;
         margin-bottom: 2em; }
 
 div.bio-slide {
@@ -218,10 +269,58 @@ div.bio-slide {
     max-width: 60%;
     margin: auto;
     overflow: hidden; }
-  div.bio-slide figure {
-    margin: 0 auto 3em;
-    width: 30em;
-    height: auto; }
+    div.bio-slide div#bio figure {
+      margin: 0 auto 3em;
+      width: 30em;
+      height: auto; }
+  @media (min-width: 992px) {
+    div.bio-slide .container {
+      width: 970px; } }
+  div.bio-slide div.containerfluid {
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3%; }
+    div.bio-slide div.containerfluid div.row {
+      overflow: hidden;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[12];
+          grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px; }
+      @media (min-width: 992px) {
+        div.bio-slide div.containerfluid div.row .col-sm-4 {
+          -ms-grid-column: span 4;
+              grid-column: span 4; }
+        div.bio-slide div.containerfluid div.row .col-sm-8 {
+          -ms-grid-column: span 8;
+              grid-column: span 8; } }
+      div.bio-slide div.containerfluid div.row div.image-block {
+        border: 3px solid white;
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+        height: 200px;
+        text-align: center;
+        vertical-align: bottom;
+        -webkit-transition: transform .3s ease-in-out; }
+      div.bio-slide div.containerfluid div.row div.image-block p {
+        width: 100%;
+        height: 100%;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 110px 20px 20px 20px;
+        background-color: rgba(3, 3, 3, 0);
+        color: rgba(6, 6, 6, 0);
+        transition: background-color .3s; }
+      div.bio-slide div.containerfluid div.row div.image-block:hover {
+        transform: scale(1.1); }
+        div.bio-slide div.containerfluid div.row div.image-block:hover p {
+          background-color: rgba(3, 3, 3, 0.5);
+          color: white;
+          background-size: 120%; }
 
 div.outro-slide {
   clear: both;
@@ -287,6 +386,28 @@ footer {
     height: 2.5em;
     margin: 0 auto; }
 
+@media (min-width: 21.25em) {
+  .wrapper {
+    width: 18.75em; }
+  div.career-block {
+    clear: both;
+    padding: 1%;
+    text-align: center;
+    margin: 0 auto 1% auto; }
+    div.career-block section {
+      text-align: center;
+      display: inline-block;
+      text-align: left; }
+      div.career-block section ul {
+        margin-left: 10%; }
+    div.career-block div.img-container {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 15%;
+      width: 20%; }
+      div.career-block div.img-container img {
+        width: 100%; } }
+
 nav.navbar {
   background-color: white;
   box-shadow: 0 8px 6px -6px #999;
@@ -299,9 +420,26 @@ nav.navbar {
     transition: color .3s; }
   nav.navbar ul li a:hover {
     color: #A7B3A5; }
+  nav.navbar div.dropdown a {
+    color: #B56357;
+    text-shadow: 2px 2px 3px #B4DBC0;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: color .3s; }
+  nav.navbar div.dropdown a:hover {
+    background-color: #FCF1C6; }
+
+a#name {
+  color: #B56357;
+  text-shadow: 2px 2px 3px #B4DBC0;
+  text-decoration: none;
+  font-size: 1.3em;
+  transition: color .3s; }
+
+a#name:hover {
+  color: #A7B3A5; }
 
 div.carousel-slide a.headline {
-  font-size: 26px;
   text-decoration: none;
   text-shadow: 2px 2px 3px #B4DBC0;
   font-size: 1.5em;
@@ -344,14 +482,29 @@ div.carousel-slide h5[name^=address] {
   color: #A7B3A5;
   text-shadow: 2px 2px 3px #FCF1C6; }
 
-div.carousel-slide ul li {
-  font-size: 1.5em; }
+div.carousel-slide ul {
+  list-style-type: none; }
+  div.carousel-slide ul li {
+    font-size: 1.1em; }
 
 div.carousel-slide div.img-container a img {
   border-radius: 8%; }
 
 div.carousel-slide div.project-block p {
   font-size: 1.4em; }
+
+div#mobile-headliner {
+  background-color: #FFFFFF;
+  text-align: center; }
+  div#mobile-headliner a.headline {
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #B4DBC0;
+    font-size: 1.2em;
+    transition: color .3s;
+    z-index: 1;
+    color: #3F1A0E; }
+  div#mobile-headliner a.headline:hover {
+    color: #B56357; }
 
 div.experience-slide {
   background: #FFFFFF; }

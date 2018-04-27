@@ -7,6 +7,8 @@
 	<title> Johnny's Website </title>
 
 	<link rel = "stylesheet" href = "css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -19,22 +21,29 @@
     <li><a href="#" onclick="scrollToY(-1, 150, 'easeInOutQuint');"><h3 id="my-name">Johnny Sellers</h3></a></li>
 		<li><a href="#a-work" class="slide-section" id="experience-button">Experience</a></li>
 		<li><a href="#portfolio" class="slide-section" id="portfolio-button">Portfolio</a></li>
-		<li><a href="#bio" class="slide-section" id="bio-button">Bio</a></li>
+		<li><a href="#bio" class="slide-section" id="bio-button">Interests</a></li>
 		<li><a href="#connect" class="slide-section" id="connect-button">Connect</a></li>
     <li><a href="#resume" class="resume" id="resume_button" >Resume</a></li>
 	</ul>
 
 	<div class="dropdown">
-	  <button class="dropbtn">Menu glyphicon</button>
+	  <!-- <button class="dropbtn">Menu glyphicon</button> -->
+    <div class="menu-button">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 	  <div class="dropdown-content">
-			<a href="#" onclick="return false;" onmousedown="autoScrollTo('a-work');">Experience</a>
-	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('portfolio');">Portfolio</a>
-	    <a href="#" onclick="return false;" onmousedown="autoScrollTo('bio');">Bio</a>
-			<a href="#" onclick="return false;" onmousedown="autoScrollTo('connect');">Connnect</a>
-      <a href="#" onclick="return false;" onmousedown="autoScrollTo('connect');">Resume</a>
+			<a href="#a-work" class="slide-section" id="experience-button">Experience</a>
+	    <a href="#portfolio" class="slide-section" id="portfolio-button">Portfolio</a>
+	    <a href="#bio" class="slide-section" id="bio-button">Bio</a>
+			<a href="#connect" class="slide-section" id="connect-button">Connnect</a>
+      <!-- <a href="#resume" class="resume" id="resume_button" >Resume</a> -->
 	  </div>
 	</div>
 </nav>
+
+<a href="#" id="name" onclick="scrollToY(-1, 150, 'easeInOutQuint');"><h3 id="my-name">Johnny Sellers</h3></a>
 
 <div id="resume_container">
   <div class="iframe_container">
@@ -46,8 +55,8 @@
 <div class="carousel-slide intro-slide">
 	<a class="section-anchor" id="intro"></a>
 
-	<div>
-		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>Welcome to my site. I'm a software developer, and I've done projects in full-stack web development, parallel computing, scientific software, some web scraping and data visualization. Currently I'm a masters student in applied mathematics at the University of Washington-Seattle.</div></a>
+	<div class="headliner">
+		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>Welcome to my site. I'm a software developer, and I've done projects in full-stack web development, parallel computing, scientific software, some web scraping and machine learning. Currently I'm a masters student at University of Washington-Seattle studying applied mathematics.</div></a>
 	</div>
 
 	<!-- TODO set this image to change when breakpoint-small (by css or else?)-->
@@ -56,6 +65,9 @@
 	</div>
 </div>	<!-- End of #intro div -->
 
+<div id="mobile-headliner">
+  <a class="headline" ><div>Welcome to my site. I'm a software developer, and I've done projects in full-stack web development, parallel computing, scientific software, some web scraping and machine learning. Currently I'm a masters student at University of Washington-Seattle studying applied mathematics.</div></a>
+</div>
 
 <div class="carousel-slide experience-slide">
 	<a class="section-anchor" id="a-work"></a>
@@ -69,7 +81,7 @@
 			<h5 name="address RTP">Seattle, WA</h5>
 			<h4>M.Sc. in Applied Math</h4>
 				<ul>
-					A large part of my focus is numerical analysis of boundary value and initial value problems. Other significant areas of study for me are numerical linear algebra and optimization. Applications areas of interest are in machine learning and high-performance computing.
+					<li>A large part of my focus is numerical analysis of boundary value and initial value problems. Other significant areas of study for me are numerical linear algebra and optimization. Applications areas of interest are in machine learning and high-performance computing.</li>
 				</ul>
 		</section>
 		<div class="img-container" id="lewis">
@@ -84,11 +96,9 @@
 			<h5 name="address RTP">RTP, NC</h5>
 			<h4>Engineering Technician</h4>
 				<ul>
-          My primary focus was the operation of an automated greenhouse, but fortunatley a daily part of my role was to work with biologists, staticians, software engineers, and others to achieve our goal of efficiently providing large amounts of accurate data.
-  			</ul>
-  			<br>
-  			<ul>
-          My most significant accomplishment was improving the downtime recording procedures and software which led to improved diagnoses and ultimately downtime reductions up to 30% for various processes. This went to maintaining a reliable infrastructure for delivering experiment data.
+          <li>My primary focus was the operation of an automated greenhouse, but fortunatley a daily part of my role was to work with biologists, staticians, software engineers, and others to achieve our goal of efficiently providing large amounts of accurate data.</li>
+  				<br>
+          <li>My most significant accomplishment was improving the downtime recording procedures and software which led to improved diagnoses and ultimately downtime reductions up to 30% for various processes--significant progress in delivering experiment data.</li>
 				</ul>
 		</section>
 		<div class="img-container">
@@ -103,11 +113,9 @@
 			<h5 name="address RTP">RTP, NC</h5>
 			<h4>Associate Mechanical Engineer</h4>
 			<ul>
-				This was my first job after graduation from N.C. State. I gained invaluable manufacturing experience in software, machining, tooling, process control and more working on the production lines of 3 medical devices.
-			</ul>
-			<br>
-			<ul>
-        My second role was lead engineer in manufacturing two main componenents of our customer's design for an electric-powered bycyle. I interfaced with the customer to make sure their vision was satisfied and with our machinists to best implement changes for manufacturability.
+        <li>This was my first job after graduation from N.C. State. I gained invaluable manufacturing experience in software, machining, tooling, process control and more working on the production lines of 3 medical devices.</li>
+			  <br>
+			  My second role was lead engineer in manufacturing two main componenents of our customer's design for an electric-powered bycyle. I interfaced with the customer to make sure their vision was satisfied and with our machinists to best implement changes for manufacturability.</li>
 			</ul>
 		</section>
 		<div class="img-container">
@@ -122,11 +130,9 @@
 			<h5 name="address Raleigh">Raleigh, NC</h5>
 			<h4>B.Sc. in Mechanical Engineering</h4>
 			<ul>
-				My urriculum consisted of thermodynamics, heat transfer, solid and fluid mechanics, classical control theory, nondestructive testing, and mechanical engineering design.
-			</ul>
-      <br>
-			<ul>
-				I completed two capstone courses: 1) We designed the coolant system for an energy plant--pump sizes, pipe dimensions, heat exchangers, valves, etc. 2) We devised a way to extract the internal components of a large-scale water filtration system (approx. 8ft by 8ft by 40ft) out of its housing by means of electromechanical devices.
+				<li>My urriculum consisted of thermodynamics, heat transfer, solid and fluid mechanics, classical control theory, nondestructive testing, and mechanical engineering design.</li>
+        <br>
+				<li>I completed two capstone courses: 1) We designed the coolant system for an energy plant--pump sizes, pipe dimensions, heat exchangers, valves, etc. 2) We devised a way to extract the internal components of a large-scale water filtration system (approx. 8ft by 8ft by 40ft) out of its housing by means of electromechanical devices.</li>
 			</ul>
 		</section>
 		<div class="img-container">
@@ -141,7 +147,7 @@
 			<h5 name="address Raleigh">Raleigh, NC</h5>
 			<h4>Undergraduate Research Assistant</h4>
 			<ul>
-				This role provided me with great experience in conducting research in the area of nano-scale, nondestructive evaluation in the biomedical/mechanical engineering arena. Our task was to investigate means for safely extracting live HeLa cells from a growth substrate that could be reproduced at scale. My team's focus was electromagnetic actuators.
+				<li>This role provided me with experience in conducting research in the area of nano-scale, nondestructive evaluation in the biomedical engineering context. Our task was to investigate means for safely extracting live HeLa cells from a growth substrate that could be reproduced at scale. My team's focus was electromagnetic actuators.</li>
 			</ul>
 		</section>
 		<div class="img-container">
@@ -179,13 +185,42 @@
 <div class="carousel-slide bio-slide">
 
 	<h2 class="title">ABOUT ME</h2>
-	<div class="list-item" id="bio">
+	<!-- <div class="list-item" id="bio">
 		<h4>As of August 21, 2017, I am officially an eclipse chaser. Seeing my first solar eclipse at Cades Cove in Townsend, Tennessee was probably the mose amazing thing I've ever done!</h4><br>
-    <figure>
+    <!-- <figure>
       <img id="eclipse" src="img/solareclipse.jpg" >
       <figcaption>Courtesy of NASA.gov</figcaption>
     </figure>
-	</div>
+	</div> -->
+
+  <div class="containerfluid">
+    <!-- <div class="row text-center">
+      <h3 class="headermessage">Responsive Image Tiles</h3>
+    </div> -->
+    <div class="row">
+      <div class="image-block col-sm-4" style="background: url(./img/illuminated_bible_2.jpg) no-repeat center;background-size:cover;">
+          <p> I am a Christian, and I love reading the Holy Bible and other theological work. </p>
+      </div>
+      <div class="image-block col-sm-8" style="background: url(img/hawaiivolcano.jpeg) no-repeat center;background-size:cover;">
+        <p> I hope to experience some of the natural wonders of Hawaii one day. </p>
+      </div>
+      <div class="image-block col-sm-4" style="background: url(./img/solareclipse.jpg) no-repeat center;background-size:cover;">
+          <p> The Great America Solar Eclipse was the most amazing thing I've ever seen! Saw it in Townsend, TN in back 2017.  </p>
+      </div>
+      <div class="image-block col-sm-4" style="background: url(img/mgsv.jpeg) no-repeat center;background-size:cover;">
+        <p> Best game ever.  </p>
+      </div>
+      <div class="image-block col-sm-4" style="background: url(img/newyork.jpeg) no-repeat center;background-size:cover;">
+        <p> This place seems like it might be nice to visit one day... </p>
+      </div>
+      <div class="image-block col-sm-8" style="background: url(img/piano.jpeg) no-repeat center;background-size:cover;">
+        <p> Love music...listening and playing. </p>
+      </div>
+      <div class="image-block col-sm-4" style="background: url(img/bike.jpeg) no-repeat center;background-size:cover;">
+        <p> This is my escape. Gotta stay healthy! </p>
+      </div>
+    </div>
+  </div>
 
 </div>	<!-- End of bio slide -->
 
@@ -195,7 +230,7 @@
 	<div id="outro">
 		<p class="outro">Let's get in touch!</p>
 		<br>
-		<p class="text">I'm currently a masters student in applied mathematics at the University of Washington-Seattle, and I'm looking to join a team that shares the same passion for new technologies and optimum software. I love anything machine learning and HPC related--distributed, GPU and cloud computing, large data sets, algorithm design and analysis, etc.</p><br>
+		<p class="text">I'm want to join a team that shares my passion for new technologies and developing software. I love anything that's HPC, numerical analysis, and machine learning related. Please check out my github profile.</p><br>
 	</div>
 </div>	<!-- End of outro slide -->
 
