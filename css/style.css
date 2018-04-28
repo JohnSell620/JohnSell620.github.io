@@ -120,12 +120,14 @@ a#name {
     top: 1%;
     right: 25px;
     display: inline-block; }
-    nav.navbar div.dropdown div.menu-button div {
-      width: 35px;
-      height: 4px;
-      background-color: #0A1612;
-      margin: 5px 0;
-      transition: box-shadow .2s; }
+    nav.navbar div.dropdown div.menu-button {
+      cursor: pointer; }
+      nav.navbar div.dropdown div.menu-button div {
+        width: 35px;
+        height: 4px;
+        background-color: #0A1612;
+        margin: 5px 0;
+        transition: box-shadow .2s; }
     nav.navbar div.dropdown div.dropdown-content {
       display: none;
       position: absolute;
@@ -137,16 +139,31 @@ a#name {
       z-index: 1; }
       nav.navbar div.dropdown div.dropdown-content a {
         display: block; }
-  nav.navbar div.dropdown:hover div.dropdown-content {
-    display: block; }
-  nav.navbar div.dropdown:hover div.menu-button div {
-    box-shadow: 1.5px 1.5px 2px #1E90FF; }
+    nav.navbar div.dropdown div.show {
+      display: block; }
+  nav.navbar .dropdown:hover div.menu-button, nav.navbar .dropdown:focus div.menu-button {
+    z-index: 999; }
+    nav.navbar .dropdown:hover div.menu-button div, nav.navbar .dropdown:focus div.menu-button div {
+      box-shadow: 1.5px 1.5px 2px #1E90FF; }
   a#name {
     display: inline-block;
     position: fixed;
-    top: 2.5%;
-    left: 8%;
+    top: .5em;
+    left: 5%;
     z-index: 999; } }
+
+@media (max-width: 760px) {
+  nav.navbar {
+    height: 3em; }
+  div.headliner {
+    display: none; }
+  div#mobile-headliner {
+    display: block; }
+    div#mobile-headliner a.headline {
+      position: relative; }
+    div#mobile-headliner div {
+      width: 65%;
+      margin: auto; } }
 
 div#resume_container {
   width: 100%;
@@ -204,19 +221,6 @@ div.intro-slide div#intro-img {
 
 div#mobile-headliner {
   display: none; }
-
-@media (max-width: 760px) {
-  nav.navbar {
-    height: 10%; }
-  div.headliner {
-    display: none; }
-  div#mobile-headliner {
-    display: block; }
-    div#mobile-headliner a.headline {
-      position: relative; }
-    div#mobile-headliner div {
-      width: 65%;
-      margin: auto; } }
 
 div.experience-slide h2 {
   padding-top: 1em; }
@@ -385,6 +389,20 @@ footer {
     display: block;
     height: 2.5em;
     margin: 0 auto; }
+
+@media (max-width: 720px) {
+  footer div {
+    width: 20%;
+    margin-top: 2.5%;
+    margin-right: 4%;
+    margin-bottom: -30%;
+    margin-left: 4%; }
+    footer div img {
+      transition: width .3s; }
+  div#copyright {
+    display: block;
+    height: 1em;
+    margin: 0 auto; } }
 
 @media (min-width: 21.25em) {
   .wrapper {
