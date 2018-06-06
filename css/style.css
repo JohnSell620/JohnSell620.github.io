@@ -258,10 +258,14 @@ div.carousel-slide.portfolio-slide {
       margin: 3em 3em 4em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img {
         width: 15em;
-        margin-bottom: 2em; }
+        margin-bottom: 2em;
+        opacity: .6;
+        transition: opacity .2s; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#python {
         width: 9em;
         margin-bottom: 2em; }
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img:hover {
+        opacity: 1; }
 
 div.bio-slide {
   margin: 1.5em auto 0 auto;
@@ -383,8 +387,15 @@ footer {
     width: 10em;
     height: 11em; }
     footer div img {
-      width: 9em;
+      margin-top: 9%;
+      width: 7em;
       transition: width .3s; }
+    footer div img#github {
+      margin-top: 0;
+      width: 9em; }
+    footer div img#github:hover {
+      width: 10em;
+      opacity: .7; }
   footer div#copyright {
     display: block;
     height: 2.5em;
@@ -526,6 +537,9 @@ div#mobile-headliner {
 
 div.experience-slide {
   background: #FFFFFF; }
+  div.experience-slide section ul li {
+    font-family: serif;
+    font-size: 1.1em; }
 
 div.portfolio-slide {
   background: #FFFFFF; }
@@ -570,7 +584,8 @@ footer {
   background: #FFFFFF; }
   footer img {
     border-radius: 8%;
-    vertical-align: top; }
+    vertical-align: middle;
+    margin-top: auto; }
   footer img:hover {
-    width: 10em;
+    width: 8em;
     opacity: .7; }
