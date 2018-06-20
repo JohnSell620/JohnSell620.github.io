@@ -261,9 +261,9 @@ div.carousel-slide.portfolio-slide {
         margin-bottom: 2em;
         opacity: .6;
         transition: opacity .2s; }
-      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#python {
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#goodreads {
         width: 9em;
-        margin-bottom: 2em; }
+        margin-bottom: 1em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img:hover {
         opacity: 1; }
 
@@ -545,6 +545,8 @@ div.portfolio-slide {
   background: #FFFFFF; }
   div.portfolio-slide h2.title {
     text-shadow: 2px 2px 3px #F7CE2E; }
+  div.portfolio-slide p#p-work {
+    text-shadow: 1px 1px 1px #1E90FF; }
 
 div.bio-slide {
   background-color: #FFFFFF; }
