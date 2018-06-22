@@ -33,8 +33,8 @@
     <li><a href="#resume" class="resume" id="resume_button" >Resume</a></li>
 	</ul>
 
-	<div class="dropdown">
-    <div onclick="displayDropdownMenu()" class="menu-button">
+	<div class="dropdown" onclick="displayDropdownMenu()" >
+    <div class="menu-button">
       <div></div>
       <div></div>
       <div></div>
@@ -43,17 +43,17 @@
 			<a href="#a-work" class="slide-section" id="experience-button">Experience</a>
 	    <a href="#portfolio" class="slide-section" id="portfolio-button">Portfolio</a>
 	    <a href="#bio" class="slide-section" id="bio-button">Bio</a>
-			<a href="#connect" class="slide-section" id="connect-button">Connnect</a>
+			<a href="#connect" class="slide-section" id="connect-button">Connect</a>
 	  </div>
 	</div>
 </nav>
 
 <a href="#" id="name" onclick="scrollToY(-1, 150, 'easeInOutQuint');"><h3 id="my-name">Johnny Sellers</h3></a>
 
-<div id="resume_container">
+<div id="resume_container" class="file_container">
   <div class="iframe_container">
     <iframe class="iframe1" src="../img/resume.pdf#zoom=60" frameborder="0" ></iframe>
-    <img id="resume_close" src="img/close_window1600.png" onclick="hideResume();">
+    <img id="resume_close" class="file_close" src="img/close_window1600.png" onclick="hideResume();">
   </div>
 </div>
 
@@ -84,7 +84,7 @@
 			<h5 name="address RTP">Seattle, WA</h5>
 			<h4>M.Sc. in Applied Math</h4>
 			<ul>
-				<li>&emsp; A large part of my focus is in numerical analysis of initial boundary value problems; other significant areas of interest are statistical learning and optimization: applications in machine learning and high-performance computing.</li>
+				<li>&emsp; A large part of my focus is in numerical analysis of initial boundary value problems. Other significant areas of interest are statistical learning and optimization with applications in machine learning and high-performance computing.</li>
 			</ul>
 		</section>
 		<div class="img-container" id="lewis">
@@ -171,12 +171,27 @@
 
     <div class="project-block project-block-3">
       <a class="portfolio-pic" href="https://github.com/JohnSell620/sentiment-analysis-goodreads-reviews"><img src="./img/goodreads.png" alt="Goodreads" id="goodreads"/></a>
-      <p class="portfolio-description">Data mining project where book reviews are scraped from the Goodreads website and sentiment analysis is performed using a RNN with LSTMs. Tech used: Scrapy, Tensorflow, Cuda, cuDNN, D3.js.</p>
+      <p class="portfolio-description">Document-level sentiment analysis of book reivews scraped from the Goodreads website.</p>
     </div>
+
+		<div class="project-block project-block-5">
+			<a class="portfolio-pic" href="https://github.com/JohnSell620"><img id="cern" src="./img/cern.jpg" alt="CERN LHL" /></a>
+			<p class="portfolio-description">Started the CERN TrackML Kaggle competition, working on a semi-supervised method to classify the hit tracks created from particle collisions in the LHC.</p>
+		</div>
 
 		<div class="project-block project-block-1">
 			<a class="portfolio-pic" href="https://github.com/JohnSell620/jMessage"><img src="./img/jmessagelogo1.png" alt="jMessage API" /></a>
-			<p class="portfolio-description">RESTful API for web messaging. Built with JAX-RS, Hibernate, and Maven.</p>
+			<p class="portfolio-description">RESTful API for web messaging. Built with Jersey, Hibernate, and Maven.</p>
+		</div>
+
+		<div class="project-block project-block-4">
+			<a class="portfolio-pic" href="#report" id="report_button">
+        <video autoplay="autoplay" loop>
+          <source src="img/swe_sphere.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+			<p class="portfolio-description">Simulation of 2-dimensional shallow water model on a sphere from <a href="http://www.clawpack.org/gallery/pyclaw/gallery/Rossby_wave.html">Clawpack</a> software. Click the movie to see my report on numerical solutions of the 1D nonlinear system.</p>
 		</div>
 
 		<div class="project-block project-block-2">
@@ -185,6 +200,13 @@
 		</div>
 
 	</div>
+</div>
+
+<div id="report_container" class="file_container">
+  <div class="iframe_container">
+    <iframe class="iframe1" src="../img/report.pdf#page=1&#zoom=60" frameborder="0" ></iframe>
+    <img id="report_close" class="file_close" src="img/close_window1600.png" onclick="hideReport();">
+  </div>
 </div>
 
 <a class="section-anchor" id="bio"></a>
@@ -197,17 +219,17 @@
       <div class="image-block col-sm-4" style="background: url(./img/illuminated_bible_2.jpg) no-repeat center;background-size:cover;">
           <p> I am a Christian, and I love reading the Holy Bible, theology, and Christian philosphy. </p>
       </div>
-      <div class="image-block col-sm-8" style="background: url(img/hawaiivolcano.jpeg) no-repeat center;background-size:cover;">
-        <p> I hope to experience some of the natural wonders of Hawaii one day. </p>
+      <div class="image-block col-sm-8" style="background: url(img/smokeyriver.JPG) no-repeat center;background-size:cover;">
+        <p> Took this on a river in the Smokey Mountains. </p>
       </div>
       <div class="image-block col-sm-4" style="background: url(./img/solareclipse.jpg) no-repeat center;background-size:cover;">
-          <p> The Great American Solar Eclipse was the most amazing thing I've ever seen! Saw it in the Smokies, Cades Cove, Townsend, TN back in 2017.  </p>
+          <p> The Great American Solar Eclipse was the most amazing thing I've ever seen! Saw it at Cades Cove, Townsend, TN.  </p>
       </div>
       <div class="image-block col-sm-4" style="background: url(img/mgsv.jpeg) no-repeat center;background-size:cover;">
         <p> Best game ever.  </p>
       </div>
-      <div class="image-block col-sm-4" style="background: url(img/newyork.jpeg) no-repeat center;background-size:cover;">
-        <p> Another place I've been wanting to visit is New York. </p>
+      <div class="image-block col-sm-4" style="background: url(img/korea.jpg) no-repeat center;background-size:cover;">
+        <p id="korea"> Very first picture with a camera I bought in South Korea back in 2006. </p>
       </div>
       <div class="image-block col-sm-8" style="background: url(img/piano.jpeg) no-repeat center;background-size:cover;">
         <p> Love music...listening and playing. </p>
@@ -227,7 +249,7 @@
 		<p class="outro">Let's get in touch!</p>
 		<br>
 		<p class="text">I'm most interested in innovative companies with exciting products and where I can make a significant impact. A role with advancement opportunities and independence would be ideal, but as long as the work is interesting and the people are nice I'm happy!</p>
-    <p>I'm open to jump on any projects related to software, HPC, machine learning, physics, analytics--you name it, so feel free to shoot me an email.
+    <p>I'm open to jump on any projects related to software, HPC, machine learning, physics, analytics - you name it - so feel free to shoot me an email.
     </p><br>
 	</div>
 </div>	<!-- End of outro slide -->
