@@ -112,7 +112,7 @@ nav.navbar {
 a#name {
   display: none; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1300px) {
   nav.navbar ul.nav {
     display: none; }
   nav.navbar div.dropdown {
