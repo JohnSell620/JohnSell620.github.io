@@ -436,6 +436,8 @@ footer {
     margin-bottom: 10%;
     margin-left: 10%; }
   div.bio-slide div.containerfluid {
+    display: none; }
+  div.outro-slide div#outro p#repeat {
     display: none; } }
 
 @media (max-width: 720px) {
