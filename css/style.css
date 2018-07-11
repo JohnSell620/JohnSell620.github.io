@@ -288,6 +288,8 @@ div.bio-slide {
   margin: 1.5em auto 0 auto;
   background: url("../../../img/circwht.jpg");
   background-position: 0 0; }
+  div.bio-slide div#bio_short {
+    display: none; }
   div.bio-slide div#bio {
     text-align: center;
     padding: 1em 0;
@@ -406,8 +408,8 @@ footer {
     width: 10em;
     height: 11em; }
     footer div img {
-      margin-top: 9%;
-      width: 7em;
+      margin-top: 14%;
+      width: 6.5em;
       transition: width .3s; }
     footer div img#github {
       margin-top: 0;
@@ -415,12 +417,30 @@ footer {
     footer div img#github:hover {
       width: 10em;
       opacity: .7; }
+    footer div img#blog {
+      margin-top: 15%;
+      width: 9em; }
+    footer div img#blog:hover {
+      width: 10em;
+      opacity: .7; }
   footer div#copyright {
     display: block;
     height: 2.5em;
     margin: 0 auto; }
 
+@media (max-width: 1000px) {
+  div.bio-slide div#bio_short {
+    display: block;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%; }
+  div.bio-slide div.containerfluid {
+    display: none; } }
+
 @media (max-width: 720px) {
+  div#outro {
+    display: none; }
   footer div {
     width: 20%;
     margin-top: 2.5%;
@@ -573,6 +593,9 @@ div.bio-slide {
   background-color: #FFFFFF; }
   div.bio-slide h2.title {
     text-shadow: 2px 2px 3px #1E90FF; }
+  div.bio-slide div#bio_short p {
+    font-size: 1.8em;
+    text-shadow: 1px 1px 1px #F7CE2E; }
 
 div.outro-slide {
   background: #b4dbc0;
