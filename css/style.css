@@ -417,6 +417,12 @@ footer {
     footer div img#github:hover {
       width: 10em;
       opacity: .7; }
+    footer div img#twitter {
+      margin-top: 5%;
+      width: 9em; }
+    footer div img#twitter:hover {
+      width: 10em;
+      opacity: .7; }
     footer div img#blog {
       margin-top: 15%;
       width: 9em; }
