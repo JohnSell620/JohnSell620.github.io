@@ -269,11 +269,13 @@ div.carousel-slide.portfolio-slide {
         transition: opacity .2s; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#cern {
         margin-bottom: 1em;
-        width: 18em;
-        height: 12em; }
+        width: 16em;
+        height: 10em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#goodreads {
         width: 9em;
         margin-bottom: 1em; }
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#numint {
+        width: 17em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img:hover {
         opacity: 1; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a video {
