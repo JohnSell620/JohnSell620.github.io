@@ -62,7 +62,10 @@
 	<a class="section-anchor" id="intro"></a>
 
 	<div class="headliner">
-		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')"><div>Software engineer and graduate student in applied mathematics at the University of Washington-Seattle. I'm interested in optimization for machine learning, numerical analysis, and high-performance computing. Welcome to my site.</div></a>
+		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')">
+      <div>Machine learning engineer. My interests are NLP, optimization, numerical analysis, and high-performance computing. Welcome to my site.</div>
+      <!-- <div>Software engineer and graduate student in applied mathematics at the University of Washington-Seattle. I'm interested in optimization for machine learning, numerical analysis, and high-performance computing. Welcome to my site.</div> -->
+    </a>
 	</div>
 
 	<div id="intro-img">
@@ -170,6 +173,11 @@
 
 	<div class="portfolio">
 
+    <div class="project-block project-block-6">
+      <a class="portfolio-pic" href="#tsreport" id="tsreport_button"><img src="./img/paperthumbnail.PNG" alt="Text Summarization Paper" id="tspaper"/></a>
+      <p class="portfolio-description">Evaluation of unsupervised, extractive techniques, namely LSA and TextRank, applied to single-document automatic text summarization of TED Talk transcripts. Repository is <a href="https://github.com/JohnSell620/data-driven-text-analysis">here</a>.</p>
+    </div>
+
     <div class="project-block project-block-3">
       <a class="portfolio-pic" href="https://github.com/JohnSell620/sentiment-analysis-goodreads-reviews"><img src="./img/goodreads.png" alt="Goodreads" id="goodreads"/></a>
       <p class="portfolio-description">Document-level sentiment analysis of book reivews scraped from the Goodreads website. Tech used includes TensorFlow, Hadoop HDFS, Sqoop, Pydoop, Scrapy, and D3.js.</p>
@@ -196,7 +204,7 @@
 		</div>
 
 		<div class="project-block project-block-2">
-			<a class="portfolio-pic" href="https://github.com/JohnSell620/NumInt"><img id="numint" src="./img/numint1.png" alt="NumInt" /></a>
+			<a class="portfolio-pic" href="https://github.com/JohnSell620/NumIntPlot"><img id="numint" src="./img/numint1.png" alt="NumInt" /></a>
 			<p class="portfolio-description">Qt Creator desktop application for evaluating triple integrals and also testing with <a href="https://github.com/JohnSell620/HPC-Library">HPC-Library</a>.</p>
 		</div>
 
@@ -207,6 +215,13 @@
   <div class="iframe_container">
     <iframe class="iframe1" src="../img/report.pdf#page1&zoom=90,100,100" frameborder="0" ></iframe>
     <img id="report_close" class="file_close" src="img/close_window1600.png" onclick="hideReport();">
+  </div>
+</div>
+
+<div id="tsreport_container" class="file_container">
+  <div class="iframe_container">
+    <iframe class="iframe1" src="../img/tsreport.pdf#page1&zoom=90,100,100" frameborder="0" ></iframe>
+    <img id="report_close" class="file_close" src="img/close_window1600.png" onclick="hideTSReport();">
   </div>
 </div>
 
@@ -221,18 +236,24 @@
 
   <div class="containerfluid">
     <div class="row">
-      <div class="image-block col-sm-4" style="background: url(./img/illuminated_bible_2.jpg) no-repeat center;background-size:cover;">
-          <p> I am a Christian, and I love reading the Holy Bible, theology, and Christian philosphy. </p>
+      <div class="image-block col-sm-4" style="background: url(./img/airview.JPG) no-repeat center;background-size:cover;">
+          <p> View from outside plane window. </p>
       </div>
+      <!-- <div class="image-block col-sm-4" style="background: url(./img/illuminated_bible_2.jpg) no-repeat center;background-size:cover;">
+          <p> I am a Christian, and I love reading the Holy Bible, theology, and Christian philosphy. </p>
+      </div> -->
       <div class="image-block col-sm-8" style="background: url(img/smokeyriver.JPG) no-repeat center;background-size:cover;">
         <p> Taken on a river in the Smokey Mountains. </p>
       </div>
       <div class="image-block col-sm-4" style="background: url(./img/solareclipse.jpg) no-repeat center;background-size:cover;">
           <p> The Great American Solar Eclipse was the most amazing thing I've ever seen! Saw it at Cades Cove, Townsend, TN.  </p>
       </div>
-      <div class="image-block col-sm-4" style="background: url(img/mgsv.jpeg) no-repeat center;background-size:cover;">
-        <p> Best game ever.  </p>
+      <div class="image-block col-sm-4" style="background: url(img/seattle.JPG) no-repeat center;background-size:cover;">
+        <p> View of Seattle from Pier 66.  </p>
       </div>
+      <!-- <div class="image-block col-sm-4" style="background: url(img/mgsv.jpeg) no-repeat center;background-size:cover;">
+        <p> Best game ever.  </p>
+      </div> -->
       <div class="image-block col-sm-4" style="background: url(img/korea.jpg) no-repeat center;background-size:cover;">
         <p id="korea"> Very first picture with a camera I bought in South Korea back in 2006. </p>
       </div>
@@ -240,7 +261,7 @@
         <p> Love music...listening and playing. </p>
       </div>
       <div class="image-block col-sm-4" style="background: url(img/bike.jpeg) no-repeat center;background-size:cover;">
-        <p> Avid biker and all-around fan of the outdoors. </p>
+        <p> All-around fan of the outdoors. </p>
       </div>
     </div>
   </div>
@@ -253,9 +274,9 @@
 	<div id="outro">
 		<p class="outro">Let's get in touch!</p>
 		<br>
-    <p id="repeat">I'm always excited to do work in mathematics, software engineering, HPC, machine learning, physics, analytics - you name it. Feel free to message me on LinkedIn or Twitter.
-    </p>
-		<p class="text">I'm interested in innovative companies with both exciting products and opportunities where I can make a significant impact. An ideal role for me is one in which I am always learning and continuing to grow professionally. If the work is interesting and the folks are nice I will be very happy!</p>
+    <!-- <p id="repeat">I'm always excited to do work in mathematics, software engineering, HPC, machine learning, physics, analytics - you name it. Feel free to message me on LinkedIn or Twitter.
+    </p> -->
+		<p class="text">My focus lately has been in automatic text summarization. In particular, I'm working researching abstractive summarization techniques using deep learning models.</p>
     <br>
 	</div>
 </div>	<!-- End of outro slide -->
@@ -290,7 +311,7 @@
   <div class="footer"><a href="https://twitter.com/JohnnySellers62"><img id="twitter" src="./img/twitter.png" alt="Twitter logo"></a></div>
 	<!-- <div class="footer email_button"><a href="#emal"><img src="./img/email-logo-hi.png" alt="Email symbol"></a></div> -->
   <div id="blog" class="footer"><a href="https://johnns620.github.io"><img id="blog" src="./img/blog.png" alt="Blog logo"></a></div>
-  <div id="copyright">Copyright &copy; 2018 &bull; Johnny Sellers</div>
+  <div id="copyright">Copyright &copy; 2019 &bull; Johnny Sellers</div>
 </footer>
 
 

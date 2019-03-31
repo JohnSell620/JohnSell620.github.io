@@ -267,10 +267,9 @@ div.carousel-slide.portfolio-slide {
         margin-bottom: 2em;
         opacity: .6;
         transition: opacity .2s; }
-      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#cern {
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#tspaper {
         margin-bottom: 1em;
-        width: 16em;
-        height: 10em; }
+        width: 13em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#goodreads {
         width: 9em;
         margin-bottom: 1em; }
@@ -279,7 +278,7 @@ div.carousel-slide.portfolio-slide {
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img:hover {
         opacity: 1; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a video {
-        width: 20em;
+        width: 18em;
         margin-bottom: 1em;
         opacity: .6;
         transition: opacity .2s; }
