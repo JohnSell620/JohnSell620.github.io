@@ -63,7 +63,7 @@
 
 	<div class="headliner">
 		<a href="#" class="headline" onclick="scrollToY(1, 100, 'easeInOutQuint')">
-      <div>Machine learning engineer. My interests are NLP, optimization, numerical analysis, and high-performance computing. Welcome to my site.</div>
+      <div>Machine learning engineer. My interests are in NLP, optimization, numerical analysis, and high-performance computing. Welcome to my site.</div>
       <!-- <div>Software engineer and graduate student in applied mathematics at the University of Washington-Seattle. I'm interested in optimization for machine learning, numerical analysis, and high-performance computing. Welcome to my site.</div> -->
     </a>
 	</div>
@@ -174,13 +174,18 @@
 	<div class="portfolio">
 
     <div class="project-block project-block-6">
-      <a class="portfolio-pic" href="#tsreport" id="tsreport_button"><img src="./img/paperthumbnail.PNG" alt="Text Summarization Paper" id="tspaper"/></a>
-      <p class="portfolio-description">Evaluation of unsupervised, extractive techniques, namely LSA and TextRank, applied to single-document automatic text summarization of TED Talk transcripts. Repository is <a href="https://github.com/JohnSell620/data-driven-text-analysis">here</a>.</p>
+      <a class="portfolio-pic" href="#tsreport" id="tsreport_button"><img src="./img/twc.png" alt="Text Summarization Paper" id="tspaper"/></a>
+      <p class="portfolio-description">Evaluation of unsupervised, extractive techniques, namely LSA and TextRank, applied to single-document summarization of TED Talk transcripts. Repository is <a href="https://github.com/JohnSell620/extractive-text-summarization">here</a>.</p>
     </div>
+
+      <div class="project-block project-block-7">
+        <a class="portfolio-pic" href="#mcreport" id="mcreport_button"><img src="./img/spec.png" alt="Music Classification Paper" id="mcpaper"/></a>
+        <p class="portfolio-description">Machine Learning methods applied to music artist and genre identification. Repository is <a href="https://github.com/JohnSell620/music-classification">here</a>.</p>
+      </div>
 
     <div class="project-block project-block-3">
       <a class="portfolio-pic" href="https://github.com/JohnSell620/sentiment-analysis-goodreads-reviews"><img src="./img/goodreads.png" alt="Goodreads" id="goodreads"/></a>
-      <p class="portfolio-description">Document-level sentiment analysis of book reivews scraped from the Goodreads website. Tech used includes TensorFlow, Hadoop HDFS, Sqoop, Pydoop, Scrapy, and D3.js.</p>
+      <p class="portfolio-description">Document-level sentiment analysis of book reivews scraped from the Goodreads website. Tech used includes TensorFlow, PySpark, HDFS, Sqoop, Pydoop, Scrapy, and D3.js.</p>
     </div>
 
 		<div class="project-block project-block-5">
@@ -222,6 +227,13 @@
   <div class="iframe_container">
     <iframe class="iframe1" src="../img/tsreport.pdf#page1&zoom=90,100,100" frameborder="0" ></iframe>
     <img id="report_close" class="file_close" src="img/close_window1600.png" onclick="hideTSReport();">
+  </div>
+</div>
+
+<div id="mcreport_container" class="file_container">
+  <div class="iframe_container">
+    <iframe class="iframe1" src="../img/mcreport.pdf#page1&zoom=90,100,100" frameborder="0" ></iframe>
+    <img id="report_close" class="file_close" src="img/close_window1600.png" onclick="hideMCReport();">
   </div>
 </div>
 

@@ -268,8 +268,13 @@ div.carousel-slide.portfolio-slide {
         opacity: .6;
         transition: opacity .2s; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#tspaper {
+        overflow: hidden;
         margin-bottom: 1em;
-        width: 13em; }
+        width: 20em; }
+      div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#mcpaper {
+        overflow: hidden;
+        margin-bottom: 1em;
+        width: 17em; }
       div.carousel-slide.portfolio-slide div.portfolio div.project-block a img#goodreads {
         width: 9em;
         margin-bottom: 1em; }
